@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hridoy International – Coming Soon</title>
+  <meta name="description" content="Hridoy International – Official website. We're preparing something great. Stay tuned!">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hridoy International – Coming Soon">
+  <meta property="og:description" content="We're preparing something great. Stay tuned!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hridoyinternational.com/">
+  <meta property="og:image" content="https://hridoyinternational.com/og-image.jpg">
+
+  <!-- Favicon (optional: replace when you have one) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+
+  <style>
+    :root {
+      --bg-start: #0f172a; /* slate-900 */
+      --bg-end: #111827;   /* gray-900 */
+      --card-bg: rgba(255, 255, 255, 0.06);
+      --card-stroke: rgba(255, 255, 255, 0.12);
+      --text: #e5e7eb;     /* gray-200 */
+      --muted: #9ca3af;    /* gray-400 */
+      --accent: #38bdf8;   /* sky-400 */
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 50% -10%, #1f2937 0%, transparent 60%),
+                  linear-gradient(160deg, var(--bg-start), var(--bg-end));
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      width: min(680px, calc(100% - 2rem));
+      padding: 2rem;
+      border-radius: 16px;
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid var(--card-stroke);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+      text-align: center;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 700;
+      letter-spacing: .3px;
+      color: var(--text);
+    }
+
+    .brand-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--accent), #8b5cf6);
+      box-shadow: 0 6px 16px rgba(56,189,248,.35);
+      color: white;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 1rem 0 .25rem;
+      font-size: clamp(1.6rem, 2.2vw + 1rem, 2.4rem);
+      line-height: 1.15;
+    }
+
+    p {
+      margin: .25rem 0 1.25rem;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: .7rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--card-stroke);
+      color: var(--text);
+      text-decoration: none;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      background: rgba(255,255,255,.04);
+    }
+
+    .cta:hover { transform: translateY(-1px); border-color: rgba(255,255,255,.2); }
+
+    footer {
+      margin-top: 1.25rem;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    .domain { color: #d1d5db; }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-start: #f8fafc;
+        --bg-end: #e5e7eb;
+        --text: #0f172a;
+        --muted: #475569;
+        --card-bg: rgba(255, 255, 255, 0.75);
+        --card-stroke: rgba(15, 23, 42, 0.1);
+      }
+      .cta { background: rgba(15,23,42,.04); }
+      .domain { color: #334155; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="brand" aria-label="Hridoy International">
+      <div class="brand-badge" aria-hidden="true">HI</div>
+      <span>Hridoy International</span>
+    </div>
+
+    <h1>Coming Soon!</h1>
+    <p>Our website is on the way. Please check back soon.</p>
+
+    <a class="cta" href="mailto:info@hridoyinternational.com">Contact: info@hridoyinternational.com</a>
+
+    <footer>
+      <span class="domain">hridoyinternational.com</span>
+      · © <span id="year"></span> Hridoy International
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
