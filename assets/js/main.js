@@ -4,7 +4,7 @@
 
     //Preloader
     $(window).on('load', function (event) {
-        $('.js-preloader').delay(500).fadeOut(500);
+        $('.js-preloader').delay(0).fadeOut(500);
     });
 
     //Open Search Box
