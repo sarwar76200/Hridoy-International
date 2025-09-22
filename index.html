@@ -1,147 +1,1480 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hridoy International – Coming Soon</title>
-  <meta name="description" content="Hridoy International – Official website. We're preparing something great. Stay tuned!">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Hridoy International specializes in car sales, purchases, trade-ins, recycling, shaken inspections, automotive repairs, dent painting, tires & wheels, and export deals. Your one-stop automotive partner." />
+    <meta name="keywords"
+        content="Hridoy International, buy cars, sell cars, trade-in cars, recycle cars, shaken inspection, shaken services, automotive repairs, dent paint, car export deals, tires and wheels, used cars, pre-owned cars, car consultancy, Japan cars" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Hridoy International – Coming Soon">
-  <meta property="og:description" content="We're preparing something great. Stay tuned!">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hridoyinternational.com/">
-  <meta property="og:image" content="https://hridoyinternational.com/og-image.jpg">
+    <meta name="description"
+        content="Hridoy International specializes in car sales, purchases, trade-ins, recycling, shaken inspections, automotive repairs, dent painting, tires & wheels, and export deals. Your one-stop automotive partner." />
+    <meta name="keywords"
+        content="Hridoy International, buy cars, sell cars, trade-in cars, recycle cars, shaken inspection, shaken services, automotive repairs, dent paint, car export deals, tires and wheels, used cars, pre-owned cars, car consultancy, Japan cars" />
 
-  <!-- Favicon (optional: replace when you have one) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
 
-  <style>
-    :root {
-      --bg-start: #0f172a; /* slate-900 */
-      --bg-end: #111827;   /* gray-900 */
-      --card-bg: rgba(255, 255, 255, 0.06);
-      --card-stroke: rgba(255, 255, 255, 0.12);
-      --text: #e5e7eb;     /* gray-200 */
-      --muted: #9ca3af;    /* gray-400 */
-      --accent: #38bdf8;   /* sky-400 */
-    }
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon_motoz.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/dark-theme.css">
 
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      color: var(--text);
-      background: radial-gradient(1200px 800px at 50% -10%, #1f2937 0%, transparent 60%),
-                  linear-gradient(160deg, var(--bg-start), var(--bg-end));
-      display: grid;
-      place-items: center;
-    }
-
-    .card {
-      width: min(680px, calc(100% - 2rem));
-      padding: 2rem;
-      border-radius: 16px;
-      background: var(--card-bg);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid var(--card-stroke);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
-      text-align: center;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: .6rem;
-      font-weight: 700;
-      letter-spacing: .3px;
-      color: var(--text);
-    }
-
-    .brand-badge {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--accent), #8b5cf6);
-      box-shadow: 0 6px 16px rgba(56,189,248,.35);
-      color: white;
-      font-weight: 800;
-    }
-
-    h1 {
-      margin: 1rem 0 .25rem;
-      font-size: clamp(1.6rem, 2.2vw + 1rem, 2.4rem);
-      line-height: 1.15;
-    }
-
-    p {
-      margin: .25rem 0 1.25rem;
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .cta {
-      display: inline-block;
-      padding: .7rem 1rem;
-      border-radius: 10px;
-      border: 1px solid var(--card-stroke);
-      color: var(--text);
-      text-decoration: none;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      background: rgba(255,255,255,.04);
-    }
-
-    .cta:hover { transform: translateY(-1px); border-color: rgba(255,255,255,.2); }
-
-    footer {
-      margin-top: 1.25rem;
-      font-size: .9rem;
-      color: var(--muted);
-    }
-
-    .domain { color: #d1d5db; }
-
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg-start: #f8fafc;
-        --bg-end: #e5e7eb;
-        --text: #0f172a;
-        --muted: #475569;
-        --card-bg: rgba(255, 255, 255, 0.75);
-        --card-stroke: rgba(15, 23, 42, 0.1);
-      }
-      .cta { background: rgba(15,23,42,.04); }
-      .domain { color: #334155; }
-    }
-  </style>
+    <title>Hridoy International – Reliable Cars & Auto Services</title>
+    <link rel="icon" href="assets/img/favicon.ico">
 </head>
+
 <body>
-  <main class="card" role="main">
-    <div class="brand" aria-label="Hridoy International">
-      <div class="brand-badge" aria-hidden="true">HI</div>
-      <span>Hridoy International</span>
+
+    <!--Preloader starts-->
+    <div class="loader js-preloader">
+        <svg class="car" width="102" height="40" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(2 1)" stroke="#E70D3D" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path class="car__body"
+                    d="M47.293 2.375C52.927.792 54.017.805 54.017.805c2.613-.445 6.838-.337 9.42.237l8.381 1.863c2.59.576 6.164 2.606 7.98 4.531l6.348 6.732 6.245 1.877c3.098.508 5.609 3.431 5.609 6.507v4.206c0 .29-2.536 4.189-5.687 4.189H36.808c-2.655 0-4.34-2.1-3.688-4.67 0 0 3.71-19.944 14.173-23.902zM36.5 15.5h54.01"
+                    stroke-width="2" />
+                <ellipse class="car__wheel--left" stroke-width="2.2" fill="#FFF" cx="83.493" cy="30.25" rx="6.922"
+                    ry="6.808" />
+                <ellipse class="car__wheel--right" stroke-width="2.2" fill="#FFF" cx="46.511" cy="30.25" rx="6.922"
+                    ry="6.808" />
+                <path class="car__line car__line--top" d="M22.5 16.5H2.475" stroke-width="2" />
+                <path class="car__line car__line--middle" d="M20.5 23.5H.4755" stroke-width="2" />
+                <path class="car__line car__line--bottom" d="M25.5 9.5h-19" stroke-width="2" />
+            </g>
+        </svg>
     </div>
+    <!--Preloader ends-->
 
-    <h1>Coming Soon!</h1>
-    <p>Our website is on the way. Please check back soon.</p>
 
-    <a class="cta" href="mailto:info@hridoyinternational.com">Contact: info@hridoyinternational.com</a>
+    <!-- Header Section Start -->
+    <header class="header-wrap header-three">
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-8 col-lg-9">
+                        <div class="header-top-left">
+                            <ul class="contact-info list-style">
+                                <li>
+                                    <span> Opening Hours:</span>Mon to Sat : 9:00am to 10:00pm
+                                </li>
+                                <li>
+                                    <span>Location:</span>306-0632 Ibaraki-ken, Bando-shi, Heta 1516-113 Navy Heights
+                                    204
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-3">
+                        <div class="header-top-right">
+                            <div class="user-menu">
+                                <!-- <i class="flaticon-user-1"></i> -->
+                                <span>Phone: </span><a href="tel:09088902080">090-8890-2080</a>
+                            </div>
+                            <div class="social-link">
+                                <span>Follow Us:</span>
+                                <ul class="social-profile list-style">
+                                    <li>
+                                        <a href="https://facebook.com/">
+                                            <i class="flaticon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/">
+                                            <i class="flaticon-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/">
+                                            <i class="flaticon-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/">
+                                            <i class="flaticon-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <div id="brand-logo">
+                            <img class="logo-light" src="assets/img/Logo-dark.png" alt="logo">
+                            <img class="logo-dark" src="assets/img/Logo.png" alt="logo">
+                            <!-- <img src="/img/Logo.svg"> -->
+                        </div>
+                    </a>
+                    <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+                        <div class="menu-close d-lg-none">
+                            <a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="services.html" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item d-lg-none">
+                                <a href="contact.html" class="btn-two">Get A Quote</a>
+                            </li>
+                        </ul>
+                        <div class="other-options md-none">
+                            <div class="option-item">
+                                <button class="searchbtn" type="button"><i
+                                        class="flaticon-search-interface-symbol"></i></button>
+                            </div>
+                            <div class="option-item" style="width: 35px; height: auto;">
+                                <button class="theme-toggler" onclick="toggleTheme()" type="button"
+                                    style="background-color: transparent; border: none;">
+                                    <img src="assets/img/icon/sun.svg">
+                                </button>
+                            </div>
+                            <div class="option-item">
+                                <a href="contact.html" class="btn-two">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="search-area">
+                    <input type="search" placeholder="Search Here..">
+                    <button type="submit"><i class="ri-search-line"></i></button>
+                </div>
+                <div class="mobile-bar-wrap">
+                    <div style="margin-right: 10px;">
+                        <button class="searchbtn d-lg-none" type="button"><i
+                                class="flaticon-search-interface-symbol"></i></button>
+                    </div>
+                    <div class="option-item d-lg-none"
+                        style="margin-right: 0px; margin-top: -10px; width: 35px; height: auto;">
+                        <button class="theme-toggler" onclick="toggleTheme()" type="button"
+                            style="background-color: transparent; border: none;">
+                            <img src="assets/img/icon/sun.svg">
+                        </button>
+                    </div>
 
-    <footer>
-      <span class="domain">hridoyinternational.com</span>
-      · © <span id="year"></span> Hridoy International
+                    <div class="mobile-menu d-lg-none">
+                        <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero-wrap hero-three bg-f">
+        <img src="assets/img/hero/hero-shape-5.webp" alt="Image" class="hero-shape-one moveHorizontal sm-none">
+        <img src="assets/img/hero/hero-shape-6.webp" alt="Image" class="hero-shape-two animationFramesTwo sm-none">
+        <img src="assets/img/hero/hero-shape-7.webp" alt="Image" class="hero-shape-three bounce">
+        <img src="assets/img/hero/hero-shape-8.webp" alt="Image" class="hero-shape-four bounce">
+        <img src="assets/img/hero/hero-bg-shape.webp" alt="Image" class="hero-bg-shape">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="hero-content">
+                        <span data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Welcome To Hridoy
+                            International</span>
+                        <h1 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">Best Way To Find Your
+                            Dream Car</h1>
+                        <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Buy, sell, repair, trade,
+                            or export—whatever your need, we provide reliable automotive services with care and
+                            expertise.</p>
+                        <div class="hero-btn">
+                            <a href="services.html" class="btn-two" data-aos="fade-right" data-aos-duration="1200"
+                                data-aos-delay="300">Get Started</a>
+                            <a href="contact.html" class="btn-three" data-aos="fade-right" data-aos-duration="1200"
+                                data-aos-delay="500">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                    <div class="hero-img-wrap">
+                        <div class="hero-feature-box">
+                            <img src="assets/img/hero/hero-feature-border-2.webp" alt="Image"
+                                class="hero-feature-border">
+                            <div class="hero-feature-item">
+                                <div class="hero-feature-icon">
+                                    <img src="assets/img/partners/partner-1.webp" alt="Image">
+                                </div>
+                                <div class="hero-feature-info">
+                                    <ul class="ratings list-style">
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                    </ul>
+                                    <h4>Honda Civic</h4>
+                                </div>
+                            </div>
+                            <div class="hero-feature-item">
+                                <div class="hero-feature-icon">
+                                    <img src="assets/img/partners/partner-10.webp" alt="Image">
+                                </div>
+                                <div class="hero-feature-info">
+                                    <ul class="ratings list-style">
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                    </ul>
+                                    <h4>Subaru Impreza</h4>
+                                </div>
+                            </div>
+                            <div class="hero-feature-item">
+                                <div class="hero-feature-icon">
+                                    <img src="assets/img/partners/partner-5.webp" alt="Image">
+                                </div>
+                                <div class="hero-feature-info">
+                                    <ul class="ratings list-style">
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                        <li><i class="ri-star-fill"></i></li>
+                                    </ul>
+                                    <h4>Audi A4</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="assets/img/hero/hero-img-1.webp" alt="Image" data-aos="fade-left"
+                            data-aos-duration="1200" data-aos-delay="200">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Counter Section Start -->
+    <div class="container pt-100 pb-75">
+        <div class="counter-card-wrap">
+            <div class="counter-card">
+                <div class="counter-icon">
+                    <!-- <i class="flaticon-gear"></i> -->
+                    <img class="stat-icon" style="mask: url('assets/img/icon/experience.svg') no-repeat center">
+                </div>
+                <div class="counter-info">
+                    <h2 class="counter-num">
+                        <span class="odometer" data-count="2"></span><span class="target">+</span>
+                    </h2>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-icon">
+                    <!-- <i class="flaticon-review"></i> -->
+                    <img class="stat-icon" style="mask: url('assets/img/icon/technician.svg') no-repeat center">
+                </div>
+                <div class="counter-info">
+                    <h2 class="counter-num">
+                        <span class="odometer" data-count="25"></span><span class="target">+</span>
+                    </h2>
+                    <p>Expert Workers</p>
+                </div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-icon">
+                    <!-- <i class="flaticon-hand-gesture"></i> -->
+                    <img class="stat-icon" style="mask: url('assets/img/icon/client.svg') no-repeat center">
+                </div>
+                <div class="counter-info">
+                    <h2 class="counter-num">
+                        <span class="odometer" data-count="40"></span><span class="target">+</span>
+                    </h2>
+                    <p>Satisfied Clients</p>
+                </div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-icon">
+                    <!-- <i class="flaticon-drive-thru"></i> -->
+                    <img class="stat-icon" style="mask: url('assets/img/icon/cars.svg') no-repeat center">
+                </div>
+                <div class="counter-info">
+                    <h2 class="counter-num">
+                        <span class="odometer" data-count="75"></span><span class="target">+</span>
+                    </h2>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section End -->
+
+    <!-- Product Section Start -->
+    <div id="product-section" class="product-wrap pb-70">
+        <div class="container">
+            <div class="row mb-30 align-items-end">
+                <div class="col-md-9">
+                    <div class="section-title-two">
+                        <span>New Listings</span>
+                        <h2>Find Best Deals For You</h2>
+                    </div>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <a href="contact.html" class="btn-two">View All Deals</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="product-card-three">
+                        <div class="product-img">
+                            <img src="assets/img/product/product-15.webp" alt="Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat-wrap">
+                                <a href="javascript:void(0)" class="product-category">Crossover</a>
+                                <div class="product-price">Price: $62000</div>
+                            </div>
+                            <h3><a href="javascript:void(0)">Audi Trone Electric Sport</a></h3>
+                            <p class="product-address"><i class="flaticon-placeholder"></i> 64, 1st Aveneu, High Steet,
+                                UK</p>
+                            <ul class="product-amenity list-style">
+                                <li><i class="flaticon-settings"></i> Automatic</li>
+                                <li><i class="flaticon-gas-station"></i>FWD</li>
+                                <li><i class="flaticon-speedometer"></i>1300(Mi)</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="javascript:void(0)" class="btn-one">View Seller Details</a>
+                                <a href="javascript:void(0)" class="add-to-wishlist"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="product-card-three">
+                        <div class="product-img">
+                            <img src="assets/img/product/product-16.webp" alt="Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat-wrap">
+                                <a href="javascript:void(0)" class="product-category">Convertible</a>
+                                <div class="product-price">Price: $54000</div>
+                            </div>
+                            <h3><a href="javascript:void(0)">BMW Electric Model i4</a></h3>
+                            <p class="product-address"><i class="flaticon-placeholder"></i> 2276 Hall Place, Texas, USA
+                            </p>
+                            <ul class="product-amenity list-style">
+                                <li><i class="flaticon-settings"></i> Automatic</li>
+                                <li><i class="flaticon-gas-station"></i>FWD</li>
+                                <li><i class="flaticon-speedometer"></i>1300(Mi)</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="javascript:void(0)" class="btn-one">View Seller Details</a>
+                                <a href="javascript:void(0)" class="add-to-wishlist"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="product-card-three">
+                        <div class="product-img">
+                            <img src="assets/img/product/product-17.webp" alt="Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat-wrap">
+                                <a href="javascript:void(0)" class="product-category">Wagon</a>
+                                <div class="product-price">Price: $67000</div>
+                            </div>
+                            <h3><a href="javascript:void(0)">New 2022 Lexus RC4</a></h3>
+                            <p class="product-address"><i class="flaticon-placeholder"></i>47 Bt. Brothers Road, Nt.
+                                Street, USA</p>
+                            <ul class="product-amenity list-style">
+                                <li><i class="flaticon-settings"></i> Automatic</li>
+                                <li><i class="flaticon-gas-station"></i>FWD</li>
+                                <li><i class="flaticon-speedometer"></i>1300(Mi)</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="javascript:void(0)" class="btn-one">View Seller Details</a>
+                                <a href="javascript:void(0)" class="add-to-wishlist"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="product-card-three">
+                        <div class="product-img">
+                            <img src="assets/img/product/product-18.webp" alt="Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat-wrap">
+                                <a href="javascript:void(0)" class="product-category">Hybrid</a>
+                                <div class="product-price">Price: $46000</div>
+                            </div>
+                            <h3><a href="javascript:void(0)">Volvo Electric Model A10</a></h3>
+                            <p class="product-address"><i class="flaticon-placeholder"></i>3731 Barnes Avenue, Ohio, UK
+                            </p>
+                            <ul class="product-amenity list-style">
+                                <li><i class="flaticon-settings"></i> Automatic</li>
+                                <li><i class="flaticon-gas-station"></i>FWD</li>
+                                <li><i class="flaticon-speedometer"></i>1300(Mi)</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="javascript:void(0)" class="btn-one">View Seller Details</a>
+                                <a href="javascript:void(0)" class="add-to-wishlist"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="product-card-three">
+                        <div class="product-img">
+                            <img src="assets/img/product/product-19.webp" alt="Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat-wrap">
+                                <a href="javascript:void(0)" class="product-category">Hatchback</a>
+                                <div class="product-price">Price: $76000</div>
+                            </div>
+                            <h3><a href="javascript:void(0)">Tesla 2022 Edition T10</a></h3>
+                            <p class="product-address"><i class="flaticon-placeholder"></i>2753 Barnes Street, Florida,
+                                USA</p>
+                            <ul class="product-amenity list-style">
+                                <li><i class="flaticon-settings"></i> Automatic</li>
+                                <li><i class="flaticon-gas-station"></i>FWD</li>
+                                <li><i class="flaticon-speedometer"></i>1300(Mi)</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="javascript:void(0)" class="btn-one">View Seller Details</a>
+                                <a href="javascript:void(0)" class="add-to-wishlist"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="product-card-three">
+                        <div class="product-img">
+                            <img src="assets/img/product/product-20.webp" alt="Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-cat-wrap">
+                                <a href="javascript:void(0)" class="product-category">Sedan</a>
+                                <div class="product-price">Price: $85000</div>
+                            </div>
+                            <h3><a href="javascript:void(0)">Hyundai Kong GT Sports</a></h3>
+                            <p class="product-address"><i class="flaticon-placeholder"></i> 3230 Sugarfoot Lane,
+                                Indiana, USA</p>
+                            <ul class="product-amenity list-style">
+                                <li><i class="flaticon-settings"></i> Automatic</li>
+                                <li><i class="flaticon-gas-station"></i>FWD</li>
+                                <li><i class="flaticon-speedometer"></i>1300(Mi)</li>
+                            </ul>
+                            <div class="product-action">
+                                <a href="javascript:void(0)" class="btn-one">View Seller Details</a>
+                                <a href="javascript:void(0)" class="add-to-wishlist"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Section End -->
+
+    <!-- About Section Start -->
+    <section class="about-wrap ptb-100 bg_ash">
+        <div class="container">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="about-img-wrap">
+                        <img src="assets/img/about/about-shape-1.webp" alt="Image" class="about-shape-one bounce">
+                        <img src="assets/img/about/about-img-1.webp" alt="Image" class="about-img-one">
+                        <img src="assets/img/about/about-img-2.webp" alt="Image" class="about-img-two">
+                        <div class="about-promo-box">
+                            <img src="assets/img/icon/about-icon.svg" alt="Image">
+                            <h2><span>2+</span>Years Experience</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="about-content">
+                        <div class="content-title-two">
+                            <span>About Hridoy International</span>
+                            <h2>Drive with confidence, trade with trust—experience the difference.</h2>
+                            <p>At Hridoy International, we are passionate about providing comprehensive automotive
+                                solutions tailored to meet every need. With years of experience in the industry, we
+                                specialize in buying, selling, and trading cars, ensuring that every transaction is
+                                smooth, transparent, and customer-focused.</p>
+                            <p>Our services extend beyond sales—we offer recycling services, shaken inspections, and
+                                automotive repairs, keeping vehicles in top condition. From dent painting and bodywork
+                                to tires and wheels, our skilled team ensures your car receives the care it deserves.
+                            </p>
+                        </div>
+                        <div class="progressbar-wrap">
+                            <div class="progress-bar" data-percentage="85%">
+                                <h4 class="progress-title-holder clearfix">
+                                    <span class="progress-title">Quality Assurance</span>
+                                    <span class="progress-number-wrapper">
+                                        <span class="progress-number-mark">
+                                            <span class="percent"></span>
+                                        </span>
+                                    </span>
+                                </h4>
+                                <div class="progress-content-outter">
+                                    <div class="progress-content"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar" data-percentage="82%">
+                                <h4 class="progress-title-holder clearfix">
+                                    <span class="progress-title">Professional Expertise</span>
+                                    <span class="progress-number-wrapper">
+                                        <span class="progress-number-mark">
+                                            <span class="percent"></span>
+                                        </span>
+                                    </span>
+                                </h4>
+                                <div class="progress-content-outter">
+                                    <div class="progress-content"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar" data-percentage="87%">
+                                <h4 class="progress-title-holder clearfix">
+                                    <span class="progress-title">Customer Satisfaction</span>
+                                    <span class="progress-number-wrapper">
+                                        <span class="progress-number-mark">
+                                            <span class="percent"></span>
+                                        </span>
+                                    </span>
+                                </h4>
+                                <div class="progress-content-outter">
+                                    <div class="progress-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn-two">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Category Section Start -->
+    <div class="category-wrap ptb-100">
+        <div class="container">
+            <div class="section-title-two text-center mb-30">
+                <span>Category</span>
+                <h2>Find The Best Car For You</h2>
+            </div>
+            <div class="category-slider-one owl-carousel">
+                <div class="category-card-three">
+                    <div class="cat-img">
+                        <img src="assets/img/category/cat-17.webp" alt="Image">
+                    </div>
+                    <h3><a href="javascript:void(0)">Convertible</a></h3>
+                </div>
+                <div class="category-card-three">
+                    <div class="cat-img">
+                        <img src="assets/img/category/cat-16.webp" alt="Image">
+                    </div>
+                    <h3><a href="javascript:void(0)">Sedan</a></h3>
+                </div>
+                <div class="category-card-three">
+                    <div class="cat-img">
+                        <img src="assets/img/category/cat-15.webp" alt="Image">
+                    </div>
+                    <h3><a href="javascript:void(0)">Wagon</a></h3>
+                </div>
+                <div class="category-card-three">
+                    <div class="cat-img">
+                        <img src="assets/img/category/cat-18.webp" alt="Image">
+                    </div>
+                    <h3><a href="javascript:void(0)">Car</a></h3>
+                </div>
+                <div class="category-card-three">
+                    <div class="cat-img">
+                        <img src="assets/img/category/cat-20.webp" alt="Image">
+                    </div>
+                    <h3><a href="javascript:void(0)">Crossover</a></h3>
+                </div>
+                <div class="category-card-three">
+                    <div class="cat-img">
+                        <img src="assets/img/category/cat-19.webp" alt="Image">
+                    </div>
+                    <h3><a href="javascript:void(0)">Coupe</a></h3>
+                </div>
+                <div class="category-card-three">
+                    <div class="cat-img">
+                        <img src="assets/img/category/cat-21.webp" alt="Image">
+                    </div>
+                    <h3><a href="javascript:void(0)">Convertible</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category Section End -->
+
+    <!-- Partner Section Start -->
+    <div class="bg_ash ptb-100">
+        <div class="container">
+            <div class="partner-slider owl-carousel">
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-1.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-2.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-3.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-4.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-5.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-6.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-7.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-8.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-9.webp" alt="Image">
+                </div>
+                <div class="partner-logo">
+                    <img src="assets/img/partners/partner-10.webp" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Partner Section End -->
+
+    <!-- Call To Action Section Start -->
+    <!-- <div class="cta-wrap-three bg-f ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-7 col-md-8 order-xl-1 order-lg-1 order-md-1 order-2">
+                    <div class="cta-content">
+                        <div class="section-title-two">
+                            <h2>We Make Finding The Right Car Simple</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempo incididunt ut
+                                labore et dolore magna aliqua quis ipsum suspendisse ultrice risus commodo viverra
+                                maecenas accumsan lacus.</p>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="contact.html" class="btn-two">Contact Us</a>
+                            <a href="dealers.html" class="btn-five">View Dealers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-4 order-xl-2 order-lg-2 order-md-2 order-1">
+                    <a class="play-now" data-fslightbox href="https://www.youtube.com/watch?v=BJoVxpAZb_E">
+                        <ion-icon name="play"></ion-icon>
+                        <span class="ripple"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Call To Action Section End -->
+
+    <!-- Service Section Start -->
+    <div class="service-wrap ptb-100">
+        <div class="container">
+            <div class="row">
+                <div class="section-title-two text-center mb-40">
+                    <span>Related Services</span>
+                    <h2>Services We Offer For You</h2>
+                </div>
+            </div>
+            <div class="service-slider owl-carousel">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="assets/img/services/service-1.webp" alt="Image">
+                    </div>
+                    <div class="service-info">
+                        <span class="service-icon">
+                            <!-- <i class="flaticon-van"></i> -->
+                            <img class="service-svg" style="mask: url('assets/img/icon/car-sale.svg') no-repeat center">
+                        </span>
+                        <h3><a href="javascript:void(0)">Pre owned car deals</a></h3>
+                        <p>We offer a wide selection of top-quality pre-owned cars across the country. Every vehicle
+                            is inspected for reliability, and we provide competitive prices and flexible
+                            financing to help you find your perfect car.</p>
+                        <a href="javascript:void(0)" class="link-one">Read More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="assets/img/services/service-2.webp" alt="Image">
+                    </div>
+                    <div class="service-info">
+                        <span class="service-icon">
+                            <!-- <i class="flaticon-hand-gesture"></i> -->
+                            <img class="service-svg"
+                                style="mask: url('assets/img/icon/vehicle-recycle.svg') no-repeat center">
+                        </span>
+                        <h3><a href="javascript:void(0)">Recycling of vehicles</a></h3>
+                        <p>Our eco-friendly recycling program responsibly disposes of old cars. We salvage
+                            reusable parts and properly recycle materials to minimize environmental impact and
+                            contribute to a sustainable future.</p>
+                        <a href="javascript:void(0)" class="link-one">Read More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="assets/img/services/service-3.webp" alt="Image">
+                    </div>
+                    <div class="service-info">
+                        <span class="service-icon">
+                            <!-- <i class="flaticon-technical-support"></i> -->
+                            <img class="service-svg"
+                                style="mask: url('assets/img/icon/car-for-sale.svg') no-repeat center">
+                        </span>
+                        <h3><a href="javascript:void(0)">Trade in cars</a></h3>
+                        <p>Upgrade your vehicle with our easy trade-in process. We give you a fair and transparent
+                            offer for your current car, which you can use toward a new one from our extensive
+                            inventory.</p>
+                        <a href="javascript:void(0)" class="link-one">Read More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="assets/img/services/service-4.webp" alt="Image">
+                    </div>
+                    <div class="service-info">
+                        <span class="service-icon">
+                            <!-- <i class="flaticon-drive-thru"></i> -->
+                            <img class="service-svg"
+                                style="mask: url('assets/img/icon/car-inspection.svg') no-repeat center">
+                        </span>
+                        <h3><a href="javascript:void(0)">Inspection and Evaluation</a></h3>
+                        <p>Our certified technicians conduct a thorough inspection on every car. We
+                            check for mechanical and structural integrity to ensure the highest standards of quality
+                            and safety for you.</p>
+                        <a href="javascript:void(0)" class="link-one">Read More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="assets/img/services/service-5.webp" alt="Image">
+                    </div>
+                    <div class="service-info">
+                        <span class="service-icon">
+                            <!-- <i class="flaticon-car"></i> -->
+                            <img class="service-svg"
+                                style="mask: url('assets/img/icon/car-repair.svg') no-repeat center">
+                        </span>
+                        <h3><a href="javascript:void(0)">Dent paint and repair</a></h3>
+                        <p>We provide professional dent repair and painting services to restore your car's
+                            appearance. Our skilled team uses advanced techniques to fix any cosmetic damage,
+                            ensuring a flawless finish.</p>
+                        <a href="javascript:void(0)" class="link-one">Read More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="assets/img/services/service-6.webp" alt="Image">
+                    </div>
+                    <div class="service-info">
+                        <span class="service-icon">
+                            <!-- <i class="flaticon-gear-1"></i> -->
+                            <img class="service-svg"
+                                style="mask: url('assets/img/icon/car-dealer.svg') no-repeat center">
+                        </span>
+                        <h3><a href="javascript:void(0)">Consultancy services</a></h3>
+                        <p>Our expert consultants offer personalized
+                            guidance on everything from vehicle selection to export procedures and shipping, making
+                            the process smooth and hassle-free for you.</p>
+                        <a href="javascript:void(0)" class="link-one">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Section End -->
+
+    <!-- Filter Product Section Start -->
+    <div class="filter-product-wrap-three">
+        <div class="container">
+            <form action="#" class="filter-product-three">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="form-group">
+                            <label for="car_make">Car Make</label>
+                            <select name="car_make" id="car_make">
+                                <option value="0">Select Car Make</option>
+                                <option value="1">Audi</option>
+                                <option value="2">BMW</option>
+                                <option value="3">Volkswagen</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="form-group">
+                            <label for="car_model">Car Model</label>
+                            <select name="car_model" id="car_model">
+                                <option value="0">Select Car Model</option>
+                                <option value="1">N Series</option>
+                                <option value="2">S Series</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="form-group">
+                            <label for="car_year">Select Year</label>
+                            <select name="car_year" id="car_year">
+                                <option value="0">Select Car Year</option>
+                                <option value="1">2022</option>
+                                <option value="2">2021</option>
+                                <option value="3">2020</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="form-group">
+                            <label for="car_condition">Car Condition</label>
+                            <select name="car_condition" id="car_condition">
+                                <option value="0">Select Car Condition</option>
+                                <option value="1">New</option>
+                                <option value="2">Refubrished</option>
+                                <option value="3">Resale</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="form-group">
+                            <label for="car_offer">Offer Type</label>
+                            <select name="car_offer" id="car_offer">
+                                <option value="0">Select Offer Type</option>
+                                <option value="1">Discount Offer</option>
+                                <option value="2">Promotional Offer</option>
+                                <option value="3">Rental Offer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="form-group">
+                            <label for="car_price">Select Price</label>
+                            <select name="car_price" id="car_price">
+                                <option value="0">Select Price</option>
+                                <option value="1">$1000 - $5000</option>
+                                <option value="1">$5000 - $10000</option>
+                                <option value="1">$10000 - $20000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <label for="car_milieage">Select Max Milieage</label>
+                            <select name="car_milieage" id="car_milieage">
+                                <option value="0">Select Max Milieage</option>
+                                <option value="1">2000 Miles</option>
+                                <option value="1">3000 Miles</option>
+                                <option value="1">4000 Miles</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <button type="submit" class="btn-two d-block w-100">Search Now</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Filter Product Section End -->
+
+    <!-- Listing Place Section Start -->
+    <div class="listing-wrap pt-100 pb-75 bg_ash">
+        <div class="container">
+            <div class="section-title-two text-center mb-40">
+                <span>Nearby Listings</span>
+                <h2>Listings By City</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card-one">
+                        <img src="assets/img/city/city-3.webp" alt="Image">
+                        <div class="listing-card-info">
+                            <h3><a href="javascript:void(0)">Tokyo</a></h3>
+                            <span>(9 Listings)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card-one">
+                        <img src="assets/img/city/city-8.webp" alt="Image">
+                        <div class="listing-card-info">
+                            <h3><a href="javascript:void(0)">Bando</a></h3>
+                            <span>(5 Listings)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card-one">
+                        <img src="assets/img/city/city-4.webp" alt="Image">
+                        <div class="listing-card-info">
+                            <h3><a href="javascript:void(0)">Tsukuba</a></h3>
+                            <span>(7 Listings)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card-one">
+                        <img src="assets/img/city/city-5.webp" alt="Image">
+                        <div class="listing-card-info">
+                            <h3><a href="javascript:void(0)">Joso</a></h3>
+                            <span>(9 Listings)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card-one">
+                        <img src="assets/img/city/city-7.webp" alt="Image">
+                        <div class="listing-card-info">
+                            <h3><a href="javascript:void(0)">Hitachi</a></h3>
+                            <span>(5 Listings)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="listing-card-one">
+                        <img src="assets/img/city/city-6.webp" alt="Image">
+                        <div class="listing-card-info">
+                            <h3><a href="javascript:void(0)">Tsuchiura</a></h3>
+                            <span>(7 Listings)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Listing Place Section End -->
+
+    <!-- Testimonial Section Start -->
+    <!-- <div class="testimonial-wrap ptb-100">
+        <div class="container">
+            <div class="section-title-two text-center mb-30">
+                <span>Testimonials</span>
+                <h2>What Our Customer Say</h2>
+            </div>
+            <div class="testimonial-slider-three owl-carousel">
+                <div class="testimonial-card-three">
+                    <div class="client-info-wrap">
+                        <div class="client-img">
+                            <img src="assets/img/clients/client-4.webp" alt="Image">
+                        </div>
+                        <div class="client-info">
+                            <h3>Rosaline Willium</h3>
+                            <span>CEO & Director</span>
+                        </div>
+                    </div>
+                    <p class="client-quote">“It is a long established fact that a reader will be distracted by readle
+                        content page when looking at its layout he point of using Lorem Ipsum is that it has moreor less
+                        normal distribution of letters as.”</p>
+                    <ul class="ratings list-style">
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                        <li><i class="ri-star-fill"></i></li>
+                    </ul>
+                </div>
+                <div class="testimonial-card-three">
+                    <div class="client-info-area">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-6.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h3>Miranda Halim</h3>
+                                <span>General Manager</span>
+                            </div>
+                        </div>
+                        <p class="client-quote">“It is a long established fact that a reader will be distracted by
+                            readle content page when looking at its layout he point of using Lorem Ipsum is that it has
+                            moreor less normal distribution of letters as.”</p>
+                        <ul class="ratings list-style">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial-card-three">
+                    <div class="client-info-area">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-1.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h3>Kate Stewart</h3>
+                                <span>Happy Customer</span>
+                            </div>
+                        </div>
+                        <p class="client-quote">“It is a long established fact that a reader will be distracted by
+                            readle content page when looking at its layout he point of using Lorem Ipsum is that it has
+                            moreor less normal distribution of letters as.”</p>
+                        <ul class="ratings list-style">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial-card-three">
+                    <div class="client-info-area">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-5.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h3>Kilian Anderson</h3>
+                                <span>Web Designer</span>
+                            </div>
+                        </div>
+                        <p class="client-quote">“It is a long established fact that a reader will be distracted by
+                            readle content page when looking at its layout he point of using Lorem Ipsum is that it has
+                            moreor less normal distribution of letters as.”</p>
+                        <ul class="ratings list-style">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial-card-three">
+                    <div class="client-info-area">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-3.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h3>Damble Browni</h3>
+                                <span>Happy Customer</span>
+                            </div>
+                        </div>
+                        <p class="client-quote">“It is a long established fact that a reader will be distracted by
+                            readle content page when looking at its layout he point of using Lorem Ipsum is that it has
+                            moreor less normal distribution of letters as.”</p>
+                        <ul class="ratings list-style">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial-card-three">
+                    <div class="client-info-area">
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-2.webp" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h3>Dunald Zilani</h3>
+                                <span>Accounts Manager</span>
+                            </div>
+                        </div>
+                        <p class="client-quote">“It is a long established fact that a reader will be distracted by
+                            readle content page when looking at its layout he point of using Lorem Ipsum is that it has
+                            moreor less normal distribution of letters as.”</p>
+                        <ul class="ratings list-style">
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                            <li><i class="ri-star-fill"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Testimonial Section End -->
+
+    <!-- FAQ Section start -->
+    <section class="faq-wrap ptb-100 bg_ash">
+        <img src="assets/img/faq-shape-1.webp" alt="Image" class="faq-shape-one bounce">
+        <img src="assets/img/faq-shape-2.webp" alt="Image" class="faq-shape-two animationFramesTwo">
+        <div class="container">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-6">
+                    <div class="faq-img-wrap">
+                        <img src="assets/img/city/faq-img-1.webp" alt="Image" class="faq-img-one">
+                        <img src="assets/img/city/faq-img-2.webp" alt="Image" class="faq-img-two">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="faq-content">
+                        <div class="content-title-two mb-30">
+                            <span>FAQ</span>
+                            <h2>Need To Ask Some Questions Or Check Questions</h2>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span>
+                                            <ion-icon name="add-circle-outline" class="plus"></ion-icon>
+                                            <ion-icon name="remove-circle-outline" class="minus"></ion-icon>
+                                        </span>
+                                        How can I be sure about the quality of your pre-owned cars?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="single-product-text">
+                                            <p>Every car undergoes a thorough, multi-point inspection by our certified
+                                                technicians to ensure top quality and safety. We also provide a
+                                                transparent history report with each vehicle.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span>
+                                            <ion-icon name="add-circle-outline" class="plus"></ion-icon>
+                                            <ion-icon name="remove-circle-outline" class="minus"></ion-icon>
+                                        </span>
+                                        What kind of repair services do you provide?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>We offer professional dent and paint repair, general maintenance, and
+                                            diagnostic services to keep your vehicle in excellent condition.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span>
+                                            <ion-icon name="add-circle-outline" class="plus"></ion-icon>
+                                            <ion-icon name="remove-circle-outline" class="minus"></ion-icon>
+                                        </span>
+                                        Can you help me find a specific car?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Yes, our consultancy service can help you source a specific make or model
+                                            from the Japanese market, including local auctions. We'll find it, inspect
+                                            it, and handle the entire process for you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsefour" aria-expanded="true"
+                                        aria-controls="collapsefour">
+                                        <span>
+                                            <ion-icon name="add-circle-outline" class="plus"></ion-icon>
+                                            <ion-icon name="remove-circle-outline" class="minus"></ion-icon>
+                                        </span>
+                                        What if the car has a problem after I receive it?
+                                    </button>
+                                </h2>
+                                <div id="collapsefour" class="accordion-collapse collapse "
+                                    aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="single-product-text">
+                                            <p>We stand by the quality of our vehicles. In the rare event of a problem,
+                                                please contact us immediately. We will work with you to find a
+                                                satisfactory solution based on our terms and conditions. Your
+                                                satisfaction is our top priority.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- Blog Section Start -->
+    <!-- <div class="blog-wrap pt-100 pb-75">
+        <div class="container">
+            <div class="section-title-two text-center mb-30">
+                <span>Latest News</span>
+                <h2>Easy & Fast Way To Buy Car</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="blog-card-three">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/blog-8.webp" alt="Image">
+                        </div>
+                        <div class="blog-info">
+                            <ul class="blog-metainfo  list-style">
+                                <li><i class="ri-user-3-line"></i><a href="posts-by-author.html">By Admin</a></li>
+                                <li><i class="ri-calendar-line"></i>28 October, 2024</li>
+                            </ul>
+                            <h3><a href="blog-details-right-sidebar.html">Ford Focus Production For North America Will
+                                    Find New Car...</a></h3>
+                            <p>How the adventure ended will be seen dolore ametanon aouda was anxious though.</p>
+                            <a href="blog-details-right-sidebar.html" class="link-one">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="blog-card-three">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/blog-9.webp" alt="Image">
+                        </div>
+                        <div class="blog-info">
+                            <ul class="blog-metainfo  list-style">
+                                <li><i class="ri-user-3-line"></i><a href="posts-by-author.html">By Admin</a></li>
+                                <li><i class="ri-calendar-line"></i>20 October, 2024</li>
+                            </ul>
+                            <h3><a href="blog-details-right-sidebar.html">We Hear: Audi RS Models Could Be Offered In
+                                    Your Special Car...</a></h3>
+                            <p>How the adventure ended will be seen dolore ametanon aouda was anxious though.</p>
+                            <a href="blog-details-right-sidebar.html" class="link-one">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="blog-card-three">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/blog-10.webp" alt="Image">
+                        </div>
+                        <div class="blog-info">
+                            <ul class="blog-metainfo  list-style">
+                                <li><i class="ri-user-3-line"></i><a href="posts-by-author.html">By Admin</a></li>
+                                <li><i class="ri-calendar-line"></i>12 October, 2024</li>
+                            </ul>
+                            <h3><a href="blog-details-right-sidebar.html">BMW Black Fire Edition X5, X6 M Coming In Your
+                                    Area Soon...</a></h3>
+                            <p>How the adventure ended will be seen dolore ametanon aouda was anxious though.</p>
+                            <a href="blog-details-right-sidebar.html" class="link-one">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Blog Section End -->
+
+
+
+    <!-- Footer Section Start -->
+    <footer class="footer-wrap">
+        <div class="container">
+            <div class="row pt-100 pb-75">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <a href="index.html" class="footer-logo">
+                            <div id="brand-logo-footer">
+                                <img src="assets/img/Logo-footer.png" alt="Image">
+                            </div>
+                        </a>
+                        <ul class="contact-info list-style">
+                            <li>
+                                <ion-icon name="location"></ion-icon>
+                                <h6>Location</h6>
+                                <p>306-0632 Ibaraki-ken, Bando-shi, <br /> Heta 1516-113 Navy Heights 204
+                                </p>
+                            </li>
+                            <li>
+                                <ion-icon name="mail"></ion-icon>
+                                <h6>Email</h6>
+                                <a href="mailto:info@hridoyinternational.com">info@hridoyinternational.com</a>
+                            </li>
+                            <li>
+                                <ion-icon name="call"></ion-icon>
+                                <h6>Phone</h6>
+                                <a href="tel:09088902080">090-8890-2080</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Our Services</h3>
+                        <ul class="footer-menu list-style">
+                            <li>
+                                <a href="services.html#services-section">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Car sale
+                                </a>
+                            </li>
+                            <li>
+                                <a href="services.html#services-section">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Trade in cars
+                                </a>
+                            </li>
+                            <li>
+                                <a href="services.html#services-section">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Inspection
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="services.html#services-section">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Dent paint and repair
+                                </a>
+                            </li>
+                            <li>
+                                <a href="services.html#services-section">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Consultancy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Quick Links</h3>
+                        <ul class="footer-menu list-style">
+                            <li>
+                                <a href="index.html">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Homepage
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html#faq-section">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Newsletter Signup</h3>
+                        <p>Subscribe Our Newsletter To Get Our Latest Update & News!</p>
+                        <form action="#" class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter Email Address">
+                                <button type="submit"><ion-icon name="paper-plane-outline"></ion-icon></button>
+                            </div>
+                        </form>
+                        <div class="social-link">
+                            <h6>Follow Us :</h6>
+                            <ul class="social-profile style1 list-style">
+                                <li>
+                                    <a href="https://facebook.com/">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://whatsapp.com/">
+                                        <i class="ri-whatsapp-fill"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://line.me/">
+                                        <i class="ri-line-line"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-text"><i class="ri-copyright-line"></i><span>2025 Hridoy International.</span> All rights
+            reserved.
+            Maintained by <a href="https://github.com/sarwar76200">sarwar76200</a></p>
     </footer>
-  </main>
+    <!-- Footer Section End -->
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <!-- Back-to-top button Start -->
+    <div class="paginacontainer">
+        <div class="progress-wrap bounce">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+    </div>
+    <!-- Back-to-top button End -->
+
+    <!-- Link of JS files -->
+    <script data-cfasync="false" src="assets/js/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script type="module" src='https://cdn.jsdelivr.net/npm/ionicons@8.0.13/dist/ionicons/ionicons.esm.min.js'></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/fslightbox.js"></script>
+    <script src="assets/js/tweenmax.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
+
+
+
 </html>
-
-
