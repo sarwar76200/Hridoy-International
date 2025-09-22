@@ -1989,7 +1989,7 @@ input[type="reset"]:visited,
 .hero-three .hero-img-wrap .hero-feature-box .hero-feature-item .hero-feature-icon {
   width: 80px;
   height: 80px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 50%;
   background-color: var(--whiteColor);
   display: flex;
