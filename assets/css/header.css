@@ -971,19 +971,21 @@
   }
 
   .mobile-menu {
+    transition: 500ms;
     text-align: right;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     display: inline-block;
     position: relative;
-    top: -5px;
+    top: -3px;
   }
 
   .mobile-menu a {
-    width: 46px;
-    height: 43.7px;
+    width: 60px;
+    height: 50px;
+    border-radius: 5px;
     /* border-radius: 62% 38% 46% 54%/60% 63% 37% 40%; */
     text-align: center;
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -991,8 +993,8 @@
   }
 
   .mobile-menu a i {
-    font-size: 25.3px;
-    color: var(--whiteColor);
+    font-size: 30px;
+    color: var(--blackColor);
     margin: 0 auto;
   }
 
@@ -1427,4 +1429,9 @@
   #brand-logo {
     width: 210px;
   }
+}
+
+
+.mobile-search-button {
+  color: var(--blackColor);
 }

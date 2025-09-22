@@ -1042,6 +1042,10 @@ input:checked+.slider:before {
     border-color: rgba(255, 255, 255, 0.2);
   }
 
+  .theme-dark .mobile-menu a i {
+    color: var(--whiteColor);
+  }
+
   /* Fix mobile navbar links visibility in dark mode */
   .theme-dark .header-wrap .header-bottom .navbar .navbar-nav .nav-item a {
     color: var(--whiteColor) !important;
