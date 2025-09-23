@@ -46,7 +46,7 @@
   }
   /* Fix hero section spacing on mobile */
   .hero-three {
-    margin-top: 0 !important;
+    margin-top: 70px !important;
     padding-top: 80px !important;
   }
   /* Move car image up to show entire car on mobile */
@@ -238,7 +238,7 @@
   }
   /* Fix hero section spacing on mobile */
   .hero-three {
-    margin-top: 0 !important;
+    margin-top: 70px !important;
     padding-top: 100px !important;
   }
   /* Move car image up to show entire car on mobile */
@@ -1053,7 +1053,7 @@
   }
   
   .hero-three {
-    margin-top: 0 !important;
+    margin-top: 70px !important;
     padding: 120px 0 60px;
   }
   .pt-100 {

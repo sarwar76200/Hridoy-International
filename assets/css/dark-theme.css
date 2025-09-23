@@ -1042,9 +1042,15 @@ input:checked+.slider:before {
     border-color: rgba(255, 255, 255, 0.2);
   }
 
+
+
+
+
   .theme-dark .mobile-menu a i {
     color: var(--whiteColor);
   }
+
+
 
   /* Fix mobile navbar links visibility in dark mode */
   .theme-dark .header-wrap .header-bottom .navbar .navbar-nav .nav-item a {
@@ -1153,4 +1159,11 @@ input:checked+.slider:before {
 
 .theme-dark .map-container iframe {
   filter: invert(90%) grayscale(1);
+}
+
+
+
+.theme-dark .header-wrap .navbar .other-options:before {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
