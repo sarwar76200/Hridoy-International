@@ -1878,7 +1878,7 @@ input[type="reset"]:visited,
 }
 
 .hero-three {
-  background-image: url(../img/hero/hero-bg-1.webp?cache-bust-version=1.4);
+  background-image: url(../img/hero/hero-bg-1.webp?cache-bust-version=1.5);
   position: relative;
   z-index: 1;
   margin-top: 70px;
