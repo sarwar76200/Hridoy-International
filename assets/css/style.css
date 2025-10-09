@@ -1878,7 +1878,7 @@ input[type="reset"]:visited,
 }
 
 .hero-three {
-  background-image: url(../img/hero/hero-bg-1.webp?cache-bust-version=1.7);
+  background-image: url(../img/hero/hero-bg-1.webp?cache-bust-version=1.8);
   position: relative;
   z-index: 1;
   margin-top: 70px;
@@ -7589,7 +7589,7 @@ Author Widget CSS
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .gallery-item {
